@@ -1,3 +1,23 @@
+# Install kubectl
+```powershall
+choco install kubernetes-cli
+kubectl version  --output=yaml
+```
+# Vagrantfile Setup
+```powershall
+vagrant init
+```
+# create both VMs, install K3s, and form a cluster
+```powershall
+vagrant up
+```
+
+# SSH into master
+```powershall
+vagrant ssh master
+kubectl get nodes
+```
+
 # play-with-conatiners-py
 
 > [!IMPORTANT]
